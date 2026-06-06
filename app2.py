@@ -22,7 +22,7 @@ st.set_page_config(
 def load_data():
     
     file_path = r"/workspaces/codespaces-blank/.venv/tourism_weather_merged.xlsx"
-    df = pd.read_excel(file_path)
+    df = pd.read_excel('tourism_weather_merged.xlsx')
 
     # [안전장치] 엑셀의 '월' 컬럼이 문자열('1월')이거나 소수점(1.0)일 경우를 대비해 숫자로 강제 정제
     if '월' in df.columns:
